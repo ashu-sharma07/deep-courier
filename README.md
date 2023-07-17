@@ -1,2 +1,2 @@
-# deep-courier
+# Deep Courier
 Deep Courier - A Courier Services Company
