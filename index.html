@@ -3,25 +3,834 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Deep Courier</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Deep Courier - Courier & Logistics Services</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img src="images/logo.png" alt="deep Courier logo" />
+    <!-- navbar start -->
+    <header class="navbar-area navbar-area-3 d-lg-none d-block">
+      <nav class="navbar navbar-expand-lg px-4">
+        <div class="container nav-container p-0 pt-2 pb-2">
+          <a class="main-logo" href="index.html"
+            ><img src="images/logo-phone.png" alt="img"
+          /></a>
+          <div class="responsive-mobile-menu">
+            <button
+              class="menu toggle-btn d-block d-lg-none"
+              data-target="#logisk_main_menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-left"></span>
+              <span class="icon-right"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="logisk_main_menu">
+            <ul class="navbar-nav menu-open text-lg-end">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="track.html">Track Courier</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Track</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        <div class="quote">GET QUOTES</div>
       </nav>
     </header>
+    <!-- navbar end -->
+
+    <!-- navbar start -->
+    <header class="navbar-area navbar-area-3 d-lg-block d-none">
+      <div class="row g-0">
+        <div class="col-xl-2 col-lg-3">
+          <div class="logo left-logo text-center align-self-center">
+            <a class="main-logo" href="index.html"
+              ><img src="/images/logo.png" alt="img"
+            /></a>
+          </div>
+        </div>
+        <div class="col-xl-10 col-lg-9">
+          <div class="navbar-top mb-0 px-4 d-lg-block d-none">
+            <div class="container p-lg-0">
+              <div class="row">
+                <div class="col-lg-7 col-md-9 text-md-start text-center">
+                  <ul class="topbar-left m-0">
+                    <li>
+                      <i class="fa fa-envelope"></i>
+                      sandhi01deep@gmail.com
+                    </li>
+                    <li>
+                      <i class="far fa-clock"></i>Mon - Fri 09: AM - 05: PM
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-5 col-md-3">
+                  <ul class="topbar-right social-area text-md-end text-center">
+                    <li class="d-xl-inline-block d-none">
+                      <svg
+                        width="12"
+                        height="17"
+                        viewBox="0 0 12 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 0C7.0625 0 8.0625 0.28125 9 0.8125C9.90625 1.375 10.625 2.09375 11.1875 3C11.7188 3.9375 12 4.9375 12 6C12 6.625 11.9062 7.15625 11.7812 7.625C11.625 8.125 11.3438 8.71875 10.9375 9.4375C10.625 9.9375 10.0312 10.9375 9.125 12.375L7.28125 15.2812C7.09375 15.5938 6.8125 15.8125 6.5 15.9375C6.15625 16.0625 5.8125 16.0625 5.5 15.9375C5.15625 15.8125 4.90625 15.5938 4.71875 15.2812L2.875 12.375C1.9375 10.9375 1.34375 9.96875 1.0625 9.46875C0.625 8.71875 0.34375 8.125 0.21875 7.625C0.0625 7.15625 0 6.625 0 6C0 4.9375 0.25 3.9375 0.8125 3C1.34375 2.09375 2.0625 1.375 3 0.8125C3.90625 0.28125 4.90625 0 6 0ZM6 14.5L7.96875 11.375C8.78125 10.0625 9.34375 9.15625 9.625 8.71875C9.96875 8.09375 10.1875 7.625 10.3125 7.25C10.4375 6.90625 10.5 6.5 10.5 6C10.5 5.1875 10.2812 4.4375 9.875 3.75C9.46875 3.0625 8.9375 2.53125 8.25 2.125C7.5625 1.71875 6.8125 1.5 6 1.5C5.1875 1.5 4.4375 1.71875 3.75 2.125C3.0625 2.53125 2.5 3.0625 2.09375 3.75C1.6875 4.4375 1.5 5.1875 1.5 6C1.5 6.5 1.53125 6.90625 1.65625 7.28125C1.78125 7.65625 2.03125 8.125 2.40625 8.75C2.65625 9.1875 3.1875 10.0938 4.03125 11.4062C4.8125 12.6562 5.46875 13.6875 6 14.5ZM3.5 6C3.5 6.6875 3.71875 7.28125 4.21875 7.78125C4.71875 8.28125 5.3125 8.5 6 8.5C6.6875 8.5 7.25 8.28125 7.75 7.78125C8.25 7.28125 8.5 6.6875 8.5 6C8.5 5.3125 8.25 4.75 7.75 4.25C7.25 3.75 6.6875 3.5 6 3.5C5.3125 3.5 4.71875 3.75 4.21875 4.25C3.71875 4.75 3.5 5.3125 3.5 6Z"
+                          fill="#1869fe"
+                        />
+                      </svg>
+                      <span class="ms-1"
+                        >Mohalla Pandora, Nawanshahr 144514</span
+                      >
+                      <span class="ps-3">|</span>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fab fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-lg px-4">
+            <div class="container nav-container p-0 pt-2 pb-2">
+              <div class="responsive-mobile-menu">
+                <button
+                  class="menu toggle-btn d-block d-lg-none"
+                  data-target="#logisk_main_menu"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="icon-left"></span>
+                  <span class="icon-right"></span>
+                </button>
+              </div>
+              <div class="nav-right-part nav-right-part-mobile">
+                <a class="btn btn-base" href="contact.html"
+                  ><span> </span> Get A Quote
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="logisk_main_menu">
+                <ul class="navbar-nav menu-open">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li><a href="track.html">Track Courier</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="nav-right-part nav-right-part-desktop">
+                <span class="pe-4 ps-4 d-xl-inline-block d-none">|</span>
+                <div class="media d-xl-inline-flex d-none">
+                  <div class="media-left me-2">
+                    <img src="images/p-icon.png" alt="img" />
+                  </div>
+                  <div class="media-body">
+                    <span class="title">Call Us</span> <br />
+                    <span class="phone-number text-white">+91-9478260727</span>
+                  </div>
+                </div>
+                <a
+                  class="btn btn-base d-xl-inline-block d-none"
+                  href="contact.html"
+                  ><span> </span> Get Quotes <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="position-relative">
+      <div class="slider slider-for banner-slider-main">
+        <div class="item" style="background: url(images/hero-bg.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner-inner style-white">
+                  <h6 class="sub-title text-base mb-3">
+                    <svg
+                      class="me-2"
+                      width="40"
+                      height="12"
+                      viewBox="0 0 40 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect x="20" width="20" height="2" fill="#1869FE" />
+                      <rect y="10" width="40" height="2" fill="#1869FE" />
+                    </svg>
+                    We’re best courier offer
+                  </h6>
+                  <h1 class="b-animate-2 title">
+                    Worldwide Best Courier Services
+                  </h1>
+                  <div class="btn-wrap">
+                    <a class="btn btn-base b-animate-4" href="service.html">
+                      Know more <i class="fa fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background: url(images/hero-bg.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner-inner style-white">
+                  <h6 class="sub-title text-base mb-3">
+                    <svg
+                      class="me-2"
+                      width="40"
+                      height="12"
+                      viewBox="0 0 40 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect x="20" width="20" height="2" fill="#1869FE" />
+                      <rect y="10" width="40" height="2" fill="#1869FE" />
+                    </svg>
+                    We’re best logistics offer
+                  </h6>
+                  <h1 class="b-animate-2 title">
+                    Worldwide Best Logistics Network
+                  </h1>
+                  <div class="btn-wrap">
+                    <a class="btn btn-base b-animate-4" href="service.html">
+                      Know more <i class="fa fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background: url(images/hero-bg.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner-inner style-white">
+                  <h6 class="sub-title text-base mb-3">
+                    <svg
+                      class="me-2"
+                      width="40"
+                      height="12"
+                      viewBox="0 0 40 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect x="20" width="20" height="2" fill="#1869FE" />
+                      <rect y="10" width="40" height="2" fill="#1869FE" />
+                    </svg>
+                    We're best logistics offer
+                  </h6>
+                  <h1 class="b-animate-2 title">
+                    Worldwide Best Logistics Network
+                  </h1>
+                  <div class="btn-wrap">
+                    <a class="btn btn-base b-animate-4" href="service.html">
+                      Know more <i class="fa fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-3-intro-area">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <div class="media single-intro-inner">
+                <img class="hover-bg" src="images/7.png" alt="img" />
+                <div class="media-left">
+                  <img src="images/4.png" alt="img" />
+                </div>
+                <div class="media-body">
+                  <h5 class="text-white">Real Time Delivery</h5>
+                  <p class="text-white mb-0">
+                    Experience lightning-fast shipping with our real-time
+                    delivery solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="media single-intro-inner single-intro-inner-active">
+                <img class="hover-bg" src="images/7.png" alt="img" />
+                <div class="media-left">
+                  <img src="images/5.png" alt="img" />
+                </div>
+                <div class="media-body">
+                  <h5 class="text-white">Worldwide services</h5>
+                  <p class="text-white mb-0">
+                    Go globally with our extensive international courier
+                    services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="media single-intro-inner">
+                <img class="hover-bg" src="images/7.png" alt="img" />
+                <div class="media-left">
+                  <img src="images/6.png" alt="img" />
+                </div>
+                <div class="media-body">
+                  <h5 class="text-white">Quick Support</h5>
+                  <p class="text-white mb-0">
+                    Count on us for reliable customer support whenever you need
+                    it
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- about area start -->
+    <div
+      class="about-area-2 half-bg-right pd-top-120 pd-bottom-120"
+      style="background: url(images/13.png)"
+    >
+      <div class="container">
+        <div class="about-area-inner">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="about-thumb-wrap mb-lg-0 mb-4">
+                <img class="hover-bg" src="images/deliveryman.jpg" alt="img" />
+              </div>
+            </div>
+            <div class="col-lg-7 align-self-center">
+              <div class="about-inner-wrap ms-0 ps-lg-4 mt-0">
+                <div class="section-title mb-0">
+                  <h6 class="sub-title text-base mb-3">
+                    <svg
+                      class="me-2"
+                      width="40"
+                      height="12"
+                      viewBox="0 0 40 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect x="20" width="20" height="2" fill="#1869FE" />
+                      <rect y="10" width="40" height="2" fill="#1869FE" />
+                    </svg>
+                    About Company
+                  </h6>
+                  <h2 class="title mb-2">
+                    Courier solutions that Deliver excellence
+                  </h2>
+                  <p class="mb-4">
+                    At Deep Courier, we take pride in offering courier solutions
+                    that deliver excellence at every step of the way. From swift
+                    and secure deliveries to exceptional customer service, our
+                    commitment to excellence drives us to go above and beyond
+                    for our clients.
+                  </p>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="media border-bottom-1 pb-3 mb-3">
+                        <div class="media-left me-3">
+                          <img src="images/10.png" alt="img" />
+                        </div>
+                        <div class="media-body">
+                          <h5>Fast logistics</h5>
+                          <p class="mb-0">
+                            Efficient and swift logistics solutions tailored to
+                            your needs
+                          </p>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="media-left me-3">
+                          <img src="images/11.png" alt="img" />
+                        </div>
+                        <div class="media-body">
+                          <h5>Tracking and visibility</h5>
+                          <p class="mb-0">
+                            Stay informed with real-time tracking and enhanced
+                            shipment visibility.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-wrap border-top-0">
+                    <a class="btn btn-base mb-md-0 mb-4" href="about.html"
+                      >Know More <i class="fa fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about area end -->
+
+    <!-- service area start -->
+    <div class="service-area pd-top-115 pd-bottom-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h6 class="sub-title text-base mb-3">
+                <svg
+                  class="me-2"
+                  width="40"
+                  height="12"
+                  viewBox="0 0 40 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="20" width="20" height="2" fill="#1869FE" />
+                  <rect y="10" width="40" height="2" fill="#1869FE" />
+                </svg>
+                Our Services
+              </h6>
+              <h2 class="title">Our Popular Courier Services</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 text-lg-end align-self-center">
+            <div class="btn-wrap mb-5 mb-lg-0">
+              <a class="btn btn-base" href="service.html"
+                >All Services <i class="fa fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div
+              class="single-service-wrap-2 style-2"
+              style="background-image: url(images/18.png)"
+            >
+              <div class="thumb">
+                <div class="icon">
+                  <img src="images/4.png" alt="img" />
+                </div>
+              </div>
+              <div class="details">
+                <h5>Standard Courier</h5>
+                <p>
+                  Reliable and timely standard courier solutions for hassle-free
+                  deliveries.
+                </p>
+                <div class="btn-wrap">
+                  <a class="read-more-text" href="service-details.html"
+                    >READ MORE<i class="ms-3 fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="single-service-wrap-2 style-2"
+              style="background-image: url(images/18.png)"
+            >
+              <div class="thumb">
+                <div class="icon">
+                  <img src="images/11.png" alt="img" />
+                </div>
+              </div>
+              <div class="details">
+                <h5>Door to Door</h5>
+                <p>
+                  Effortless door-to-door courier services for ultimate peace of
+                  mind
+                </p>
+                <div class="btn-wrap">
+                  <a class="read-more-text" href="service-details.html"
+                    >READ MORE<i class="ms-3 fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="single-service-wrap-2 style-2"
+              style="background-image: url(images/18.png)"
+            >
+              <div class="thumb">
+                <div class="icon">
+                  <img src="images/16.png" alt="img" />
+                </div>
+              </div>
+              <div class="details">
+                <h5>Express Courier</h5>
+                <p>
+                  Experience the speed of our express courier for time-sensitive
+                  deliveries.
+                </p>
+                <div class="btn-wrap">
+                  <a class="read-more-text" href="service-details.html"
+                    >READ MORE<i class="ms-3 fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="single-service-wrap-2 style-2"
+              style="background-image: url(images/18.png)"
+            >
+              <div class="thumb">
+                <div class="icon">
+                  <img src="images/14.png" alt="img" />
+                </div>
+              </div>
+              <div class="details">
+                <h5>Worldwide Courier</h5>
+                <p>International Seamless services connecting your shipments</p>
+                <div class="btn-wrap">
+                  <a class="read-more-text" href="service-details.html"
+                    >READ MORE<i class="ms-3 fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service area end -->
+
+    <!-- about area start -->
+    <div class="about-area-2 bg-black pd-top-120 mb-5">
+      <div class="container">
+        <div class="about-area-inner">
+          <div class="row">
+            <div class="col-lg-5 order-lg-2">
+              <div class="about-thumb-wrap mb-lg-0 mb-5">
+                <img
+                  class="hover-bg margin-bottom--130"
+                  src="images/deliverboy.jpg"
+                  alt="img"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 order-lg-1 align-self-center">
+              <div class="about-inner-wrap ms-0 ps-lg-4 pb-5 mb-4">
+                <div class="section-title style-white mb-0">
+                  <h6 class="sub-title text-base mb-3">
+                    <svg
+                      class="me-2"
+                      width="40"
+                      height="12"
+                      viewBox="0 0 40 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect x="20" width="20" height="2" fill="#1869FE" />
+                      <rect y="10" width="40" height="2" fill="#1869FE" />
+                    </svg>
+                    What We Offer
+                  </h6>
+                  <h2 class="title mb-4 pb-2">
+                    We Provide timely & Cost-effective delivery
+                  </h2>
+                  <div class="media border-bottom-1-dark pb-3 mb-3">
+                    <div class="media-left me-3">
+                      <img src="images/19.png" alt="img" />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="text-white">Real-Time Tracking</h6>
+                      <p class="mb-0 text-white">
+                        Stay updated with real-time tracking for full visibility
+                        of your shipments
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media border-bottom-1-dark pb-3 mb-3">
+                    <div class="media-left me-3">
+                      <img src="images/20.png" alt="img" />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="text-white">Security For Courier</h6>
+                      <p class="mb-0 text-white">
+                        Ensuring utmost security for your valuable shipments
+                        with our trusted courier services
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="media-left me-3">
+                      <img src="images/19.png" alt="img" />
+                    </div>
+                    <div class="media-body">
+                      <h6 class="text-white">Competitive Pricing</h6>
+                      <p class="mb-0 text-white">
+                        Experience cost-effective solutions with our competitive
+                        pricing for all your courier needs
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about area end -->
+
+    <!-- testimonial area start -->
+    <div class="testimonial-area pd-bottom-120 mb-120">
+      <div class="container">
+        <div class="section-title text-center">
+          <h6 class="sub-title text-base mb-3">
+            <svg
+              class="me-2"
+              width="40"
+              height="12"
+              viewBox="0 0 40 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="20" width="20" height="2" fill="#1869FE" />
+              <rect y="10" width="40" height="2" fill="#1869FE" />
+            </svg>
+            Testimonial
+            <svg
+              class="ms-2"
+              width="40"
+              height="12"
+              viewBox="0 0 40 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="20"
+                height="2"
+                transform="matrix(-1 0 0 1 20 0)"
+                fill="#1869FE"
+              />
+              <rect
+                width="40"
+                height="2"
+                transform="matrix(-1 0 0 1 40 10)"
+                fill="#1869FE"
+              />
+            </svg>
+          </h6>
+          <h2 class="title">What Our clients say About Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="single-testimonial-wrap style-2">
+              <div class="client-wrap">
+                <div class="thumb">
+                  <img src="images/client-1.jpg" alt="img" />
+                </div>
+                <div class="details">
+                  <h5>Rahul Yadav</h5>
+                  <p>Manager</p>
+                </div>
+              </div>
+              <p>
+                “Progressively strategize intermandated manufactured products
+                after multidisci plinary sources. Conveniently iterate
+                value-added systems with.”
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-testimonial-wrap style-2">
+              <div class="client-wrap">
+                <div class="thumb">
+                  <img src="images/client-2.jpg" alt="img" />
+                </div>
+                <div class="details">
+                  <h5>Rajesh Goyal</h5>
+                  <p>Co-Founder</p>
+                </div>
+              </div>
+              <p>
+                “Progressively strategize intermandated manufactured products
+                after multidisci plinary sources. Conveniently iterate
+                value-added systems with.”
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-testimonial-wrap style-2">
+              <div class="client-wrap">
+                <div class="thumb">
+                  <img src="images/client-3.jpg" alt="img" />
+                </div>
+                <div class="details">
+                  <h5>Mohit Sharma</h5>
+                  <p>Distributer</p>
+                </div>
+              </div>
+              <p>
+                “Progressively strategize intermandated manufactured products
+                after multidisci plinary sources. Conveniently iterate
+                value-added systems with.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial area end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area style-2">
+      <div class="footer-top" style="background-image: url(images/bg.png)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 align-self-center">
+              <div class="footer-top-subscribe pt-xl-5 pt-4 pb-xl-5 pb-4">
+                <div class="media-left border-0 p-0 m-0">
+                  <h4 class="text-white">
+                    Delivering your world one package at a time
+                  </h4>
+                  <p class="text-white mb-0">
+                    Your Couriers are in right hands
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="widget widget_about pe-xl-5">
+              <h4 class="widget-title">
+                <img src="images/main-logo.png" alt="img" />
+              </h4>
+              <div class="details">
+                <p>
+                  At Deep Courier, we are committed to providing top-notch
+                  courier solutions that prioritize speed, reliability, and
+                  customer satisfaction.
+                </p>
+                <ul class="social-media style-bg-light">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6">
+            <div class="widget widget_nav_menu">
+              <h4 class="widget-title">Explore</h4>
+              <ul>
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="service.html">Latest services</a></li>
+                <li><a href="track.html">Track Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6">
+            <div class="widget widget_nav_menu">
+              <h4 class="widget-title">Services</h4>
+              <ul>
+                <li><a href="#">Standard Courier</a></li>
+                <li><a href="#">Door to Door </a></li>
+                <li><a href="#">Express Courier </a></li>
+                <li><a href="#">Worldwide Courier </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="widget widget_contact ps-xl-5">
+              <h4 class="widget-title">Subscribe</h4>
+              <div class="widget-subscribe mb-4">
+                <span><i class="fa fa-envelope"></i></span>
+                <input type="text" placeholder="Email Address" />
+                <a href="#"><i class="fa fa-paper-plane"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- footer-bottom area start -->
+    <div class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-lg-start text-center">
+            <div class="copyright-area">
+              <p>© Copyright 2023 Deep Couriers All right reserved.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 text-lg-end text-center">
+            <ul>
+              <li>
+                <a href="terms-and-conditions.html">Terms & Condition</a>
+              </li>
+              <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-bottom area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+      <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="js/main.js"></script>
   </body>
 </html>
