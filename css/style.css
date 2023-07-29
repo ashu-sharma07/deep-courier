@@ -957,7 +957,7 @@ ul {
   position: absolute;
   left: 0;
   top: 1px;
-  content: "\f061";
+  content: ">";
   color: var(--main-color);
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
