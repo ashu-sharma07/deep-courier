@@ -149,45 +149,71 @@
       <div class="contact-area mg-top-120 mb-120">
         <div class="row g-0 justify-content-center">
           <div class="col-lg-7">
-            <form class="contact-form text-center" action="/">
+            <form
+              class="contact-form text-center"
+              action="https://formspree.io/f/xeqbeekj"
+              method="POST"
+            >
               <h3>GET A QUOTE</h3>
               <div class="row">
                 <div class="col-md-6">
                   <div class="single-input-inner">
                     <label><i class="fa fa-user"></i></label>
-                    <input type="text" placeholder="Your name" />
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      name="name"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="single-input-inner">
                     <label><i class="fa fa-envelope"></i></label>
-                    <input type="text" placeholder="Your email" />
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                      name="email"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="single-input-inner">
                     <label><i class="fas fa-calculator"></i></label>
-                    <input type="text" placeholder=" Phone number" />
+                    <input
+                      type="number"
+                      placeholder=" Phone number"
+                      name="phone"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="single-select-inner">
+                  <div class="single-input-inner">
                     <label><i class="far fa-file-alt"></i></label>
-                    <select class="single-select">
-                      <option>Subject</option>
-                      <option value="1">General</option>
-                      <option value="2">Get Quote</option>
-                    </select>
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      name="subject"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="single-input-inner">
                     <label><i class="fas fa-pencil-alt"></i></label>
-                    <textarea placeholder="Write massage"></textarea>
+                    <textarea
+                      placeholder="Write massage"
+                      name="message"
+                      required
+                    ></textarea>
                   </div>
                 </div>
                 <div class="col-12">
-                  <a class="btn btn-base" href="#"> SEND MESSAGE </a>
+                  <button type="submit" class="btn btn-base">
+                    SEND MESSAGE
+                  </button>
                 </div>
               </div>
             </form>
